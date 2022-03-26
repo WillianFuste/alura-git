@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btn-vermelha').click(function () {
+                $('#cor').css('color', '#FF0000');
+            });
+        });
+    </script>
     <meta charset="UTF-8">
     <title>Cursos da Alura</title>
+    <style type="text/css" media="all">
+        h1 {
+            color: #090
+        }
+    </style>
 </head>
+
 <body>
+    <h1 id="cor">Cabeçalho muda de cor</h1>
+    <button type="button" id="btn-vermelha">Vermelha</button>
     <ul>
         <li>Vagrant</li>
         <li>Docker</li>
@@ -12,4 +29,5 @@
         <li>Integração Contínua</li>
     </ul>
 </body>
+
 </html>
